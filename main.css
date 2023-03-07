@@ -963,12 +963,16 @@ main .container .right {
     .left .btn {
         display: none;
     }
+
+    .customize-theme .card {
+        width: 80vw;
+    }
 }
 
 
 /* *******FOR SMALL TABLETS AND MOBILE PHONES******** */
 @media screen and (max-width:992px) {
-    .search-bar {
+    .search-bar , main .container .right {
         display: none;
     }
 
@@ -981,7 +985,7 @@ main .container .right {
     main .container .left {
         grid-column: 3/4;
         position: absolute;
-        left: 0;
+        right: 0;
         bottom: 0;
     }
 
@@ -996,12 +1000,14 @@ main .container .right {
     .left .notification-popup {
         width: 20rem;
         left: -20rem;
+        position: absolute;
     }
 
     .left .notification-popup::before {
         display: block;
         top: 1.3rem;
         left: calc(20rem - 0.6rem);
+        display: block;
     }
 
     .customize-theme .card {
