@@ -1014,3 +1014,12 @@ main .container .right {
         width: 80vw;
     }
 }
+
+
+@media screen and (max-width: 460px) {
+    .customize-theme .choose-bg {
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
